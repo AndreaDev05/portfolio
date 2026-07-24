@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Andrea Matteazzi — Sviluppatore & Studente di Informatica</title>
+<meta name="description" content="Portfolio di Andrea Matteazzi — studente di Informatica all'Università Ca' Foscari di Venezia. Progetti full-stack, web e networking." />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+  body { scroll-behavior: smooth; }
+  section { scroll-margin-top: 70px; }
+  .hero { background-color: #f8f9fa; border-bottom: 1px solid #dee2e6; }
+  .section-title { font-weight: 700; margin-bottom: .25rem; }
+  .section-sub { color: #6c757d; margin-bottom: 2rem; }
+  .card-project { transition: box-shadow .15s ease, transform .15s ease; height: 100%; }
+  .card-project:hover { box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); transform: translateY(-3px); }
+  .tech-badge { font-weight: 500; }
+  .timeline-item { border-left: 3px solid #0d6efd; padding: 0 0 1.5rem 1.25rem; position: relative; }
+  .timeline-item::before { content: ""; position: absolute; left: -8px; top: 4px; width: 13px; height: 13px; border-radius: 50%; background: #0d6efd; }
+  .timeline-item:last-child { padding-bottom: 0; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#top">Andrea Matteazzi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">Chi sono</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Competenze</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Progetti</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Formazione</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="hero py-5">
+  <div class="container py-4">
+    <h1 class="display-5 fw-bold">Andrea Matteazzi</h1>
+    <p class="fs-4 text-body-secondary mb-2">Studente di Informatica &amp; Sviluppatore</p>
+    <p class="lead col-lg-8">Studente di Informatica all'Università Ca' Foscari di Venezia. I miei ambiti preferiti in informatica sono <strong>Data Science</strong>, <strong>AI &amp; Machine Learning</strong> e <strong>IoT</strong>.</p>
+    <div class="d-flex flex-wrap gap-2 mt-3">
+      <a class="btn btn-primary" href="#projects"><i class="bi bi-collection me-1"></i> Vedi i progetti</a>
+      <a class="btn btn-outline-dark" href="https://github.com/AndreaDev05" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> GitHub</a>
+      <a class="btn btn-outline-dark" href="Andrea_Matteazzi_CV.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-arrow-down me-1"></i> Scarica il CV</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Chi sono</h2>
+    <p class="section-sub">Un po' di contesto su di me</p>
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <p>Ho 20 anni e una passione per la programmazione nata alle superiori, all'<strong>ITIS "E. Fermi" di Bassano del Grappa</strong>, dove mi sono diplomato Perito in Informatica e Telecomunicazioni. Oggi proseguo con la <strong>Laurea Triennale in Informatica all'Università Ca' Foscari di Venezia</strong>.</p>
+        <p>Durante gli studi ho realizzato diversi progetti reali: da una <strong>web app full-stack per la gestione della mobilità internazionale</strong> (Angular + Express + MongoDB, containerizzata con Docker) — poi <strong>reingegnerizzata con back-end Python/Flask e database relazionale</strong> riusando lo stesso front-end — fino ad applicazioni di rete in Python (chat cifrate, videochiamate real-time) e web app in PHP.</p>
+        <p>I miei ambiti principali sono la <strong>Data Science</strong>, l'<strong>AI e il Machine Learning</strong> e l'<strong>IoT</strong>, su una base di sviluppo software e di reti (sono certificato Cisco CCNA). Da settembre 2026 trascorrerò un semestre come exchange student alla <strong>Xi'an Jiaotong-Liverpool University</strong> in Cina, dove approfondirò proprio questi temi: AI, Machine Learning, Big Data e reti di sensori wireless.</p>
+      </div>
+      <div class="col-lg-5">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="text-uppercase text-body-secondary small fw-bold mb-3">In breve</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex justify-content-between py-1 border-bottom"><span class="text-body-secondary">Ruolo</span><span class="fw-medium text-end">Studente di Informatica / Sviluppatore</span></li>
+              <li class="d-flex justify-content-between py-1 border-bottom"><span class="text-body-secondary">Università</span><span class="fw-medium text-end">Ca' Foscari, Venezia</span></li>
+              <li class="d-flex justify-content-between py-1 border-bottom"><span class="text-body-secondary">Diploma</span><span class="fw-medium text-end">Perito Informatico (ITIS Fermi)</span></li>
+              <li class="d-flex justify-content-between py-1 border-bottom"><span class="text-body-secondary">Lingue</span><span class="fw-medium text-end">Italiano madrelingua, Inglese B2</span></li>
+              <li class="d-flex justify-content-between py-1"><span class="text-body-secondary">Interessi</span><span class="fw-medium text-end">Data Science, AI/ML, IoT</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5 bg-light border-top border-bottom">
+  <div class="container">
+    <h2 class="section-title">Competenze</h2>
+    <p class="section-sub">Tecnologie e strumenti con cui ho lavorato</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <h6 class="fw-bold text-primary">Linguaggi</h6>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-secondary tech-badge">Python</span>
+          <span class="badge text-bg-secondary tech-badge">Java</span>
+          <span class="badge text-bg-secondary tech-badge">C</span>
+          <span class="badge text-bg-secondary tech-badge">C++</span>
+          <span class="badge text-bg-secondary tech-badge">PHP</span>
+          <span class="badge text-bg-secondary tech-badge">JavaScript</span>
+          <span class="badge text-bg-secondary tech-badge">TypeScript</span>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <h6 class="fw-bold text-primary">Web &amp; Framework</h6>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-secondary tech-badge">Angular</span>
+          <span class="badge text-bg-secondary tech-badge">Node.js / Express</span>
+          <span class="badge text-bg-secondary tech-badge">Flask</span>
+          <span class="badge text-bg-secondary tech-badge">HTML / CSS</span>
+          <span class="badge text-bg-secondary tech-badge">Bootstrap</span>
+          <span class="badge text-bg-secondary tech-badge">REST API</span>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <h6 class="fw-bold text-primary">Database</h6>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-secondary tech-badge">MySQL</span>
+          <span class="badge text-bg-secondary tech-badge">PostgreSQL</span>
+          <span class="badge text-bg-secondary tech-badge">MongoDB</span>
+          <span class="badge text-bg-secondary tech-badge">SQLite</span>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <h6 class="fw-bold text-primary">Strumenti &amp; Infra</h6>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-secondary tech-badge">Git</span>
+          <span class="badge text-bg-secondary tech-badge">Docker</span>
+          <span class="badge text-bg-secondary tech-badge">Linux</span>
+          <span class="badge text-bg-secondary tech-badge">Nginx</span>
+          <span class="badge text-bg-secondary tech-badge">CCNA / Networking</span>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <h6 class="fw-bold text-primary">Fondamenti</h6>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-secondary tech-badge">OOP</span>
+          <span class="badge text-bg-secondary tech-badge">Algoritmi</span>
+          <span class="badge text-bg-secondary tech-badge">Architettura Client-Server</span>
+          <span class="badge text-bg-secondary tech-badge">Sicurezza Web</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Progetti</h2>
+    <p class="section-sub">Una selezione dei lavori realizzati durante gli studi</p>
+    <div class="row g-4">
+
+      <!-- Featured -->
+      <div class="col-12">
+        <div class="card card-project">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start flex-wrap">
+              <h5 class="card-title fw-bold mb-1">CA-Mobility — Gestione Mobilità Overseas</h5>
+              </div>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Web app full-stack · progetto universitario (Tecnologie e Applicazioni Web)</h6>
+            <p class="card-text">Applicazione web che gestisce l'intero iter della mobilità internazionale (Overseas) di Ca' Foscari: dalla candidatura dello studente al Learning Agreement, fino al riconoscimento degli esami al rientro. Il sistema modella tre ruoli con permessi diversi — studenti, docenti referenti e ufficio Overseas — lungo le tre fasi della mobilità.</p>
+            <div class="row">
+              <div class="col-md-6"><ul class="mb-2"><li>Front-end SPA in Angular 19</li><li>API REST in Node.js + Express + TypeScript</li><li>Database MongoDB con Mongoose</li></ul></div>
+              <div class="col-md-6"><ul class="mb-2"><li>Autenticazione JWT e autorizzazione per ruolo</li><li>Upload documenti e notifiche via Socket.io</li><li>Ogni componente in un container Docker</li></ul></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 my-3">
+              <span class="badge rounded-pill text-bg-light border">Angular</span>
+              <span class="badge rounded-pill text-bg-light border">TypeScript</span>
+              <span class="badge rounded-pill text-bg-light border">Express</span>
+              <span class="badge rounded-pill text-bg-light border">MongoDB</span>
+              <span class="badge rounded-pill text-bg-light border">JWT</span>
+              <span class="badge rounded-pill text-bg-light border">Socket.io</span>
+              <span class="badge rounded-pill text-bg-light border">Docker</span>
+            </div>
+            <a href="https://github.com/AndreaDev05/overseas-mobility" target="_blank" rel="noopener" class="card-link"><i class="bi bi-github"></i> Codice</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-project">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">CA-Mobility — versione Basi di Dati</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Full-stack · progetto universitario (Basi di Dati)</h6>
+            <p class="card-text">La stessa applicazione reingegnerizzata con un back-end completamente diverso — <strong>Python, Flask e SQLAlchemy</strong> su database <strong>relazionale (SQLite)</strong> — riusando lo stesso front-end Angular grazie a un contratto <strong>OpenAPI</strong> condiviso. Un esercizio di modularità e progettazione a contratti d'interfaccia.</p>
+            <div class="d-flex flex-wrap gap-2 my-3">
+              <span class="badge rounded-pill text-bg-light border">Python</span>
+              <span class="badge rounded-pill text-bg-light border">Flask</span>
+              <span class="badge rounded-pill text-bg-light border">SQLAlchemy</span>
+              <span class="badge rounded-pill text-bg-light border">SQLite</span>
+              <span class="badge rounded-pill text-bg-light border">OpenAPI</span>
+            </div>
+            <a href="https://github.com/AndreaDev05/overseas-mobility-sql" target="_blank" rel="noopener" class="card-link"><i class="bi bi-github"></i> Codice</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-project">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">GMD_Live</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Applicazione di rete · progetto di team (TPSIT)</h6>
+            <p class="card-text">Applicazione di videochiamata in tempo reale con chat testuale in Python: creazione e accesso a stanze, chiamate di gruppo fino a 4 utenti, filtri webcam in tempo reale e messaggi cifrati end-to-end. Il server è raggiungibile tramite tunnel SSH con port forwarding.</p>
+            <div class="d-flex flex-wrap gap-2 my-3">
+              <span class="badge rounded-pill text-bg-light border">Python</span>
+              <span class="badge rounded-pill text-bg-light border">Socket</span>
+              <span class="badge rounded-pill text-bg-light border">Crittografia</span>
+              <span class="badge rounded-pill text-bg-light border">SSH Tunnel</span>
+            </div>
+            <a href="https://github.com/AndreaDev05/gmd-live" target="_blank" rel="noopener" class="card-link"><i class="bi bi-github"></i> Codice</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-project">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Storygram</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Web app · progetto di team (TPSIT)</h6>
+            <p class="card-text">Social network ambientato in un preciso periodo storico, sviluppato con il framework Python <strong>Flask</strong>. Gestione utenti, contenuti e interfaccia web con template server-side, HTML, CSS e JavaScript.</p>
+            <div class="d-flex flex-wrap gap-2 my-3">
+              <span class="badge rounded-pill text-bg-light border">Python</span>
+              <span class="badge rounded-pill text-bg-light border">Flask</span>
+              <span class="badge rounded-pill text-bg-light border">HTML/CSS</span>
+              <span class="badge rounded-pill text-bg-light border">JavaScript</span>
+            </div>
+            <a href="https://github.com/AndreaDev05/Storygram" target="_blank" rel="noopener" class="card-link"><i class="bi bi-github"></i> Codice</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-project">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">GMD_Chat</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Applicazione di rete · progetto di team (TPSIT)</h6>
+            <p class="card-text">Applicazione di messaggistica basata su socket in Python, con particolare attenzione alla <strong>crittografia</strong> dei messaggi. Un progetto per approfondire la comunicazione client-server sicura a basso livello.</p>
+            <div class="d-flex flex-wrap gap-2 my-3">
+              <span class="badge rounded-pill text-bg-light border">Python</span>
+              <span class="badge rounded-pill text-bg-light border">Socket</span>
+              <span class="badge rounded-pill text-bg-light border">Crittografia</span>
+            </div>
+            <a href="https://github.com/AndreaDev05/gmd-chat" target="_blank" rel="noopener" class="card-link"><i class="bi bi-github"></i> Codice</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-project">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Gestione Rosa</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Gestionale client-server · progetto di team (TPSIT)</h6>
+            <p class="card-text">Applicazione client-server in Python per la gestione di una rosa/anagrafica, con documentazione tecnica di progetto. Focus sull'architettura di rete e sulla comunicazione tra client e server.</p>
+            <div class="d-flex flex-wrap gap-2 my-3">
+              <span class="badge rounded-pill text-bg-light border">Python</span>
+              <span class="badge rounded-pill text-bg-light border">Client-Server</span>
+              <span class="badge rounded-pill text-bg-light border">Socket</span>
+            </div>
+            <a href="https://github.com/AndreaDev05/gestione-rosa" target="_blank" rel="noopener" class="card-link"><i class="bi bi-github"></i> Codice</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-project">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">ITIScloud</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Web app full-stack · progetto scolastico</h6>
+            <p class="card-text">Cloud personale in PHP e MySQL per archiviare e consultare file, musica, foto e media, con registrazione e login utenti. Un progetto server-side classico su autenticazione, database e gestione dei file.</p>
+            <div class="d-flex flex-wrap gap-2 my-3">
+              <span class="badge rounded-pill text-bg-light border">PHP</span>
+              <span class="badge rounded-pill text-bg-light border">MySQL</span>
+              <span class="badge rounded-pill text-bg-light border">HTML/CSS</span>
+            </div>
+            <a href="https://github.com/AndreaDev05/itiscloud" target="_blank" rel="noopener" class="card-link"><i class="bi bi-github"></i> Codice</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-project">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">TinyJDK</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Programmazione a oggetti · progetto universitario</h6>
+            <p class="card-text">Reimplementazione in Java di strutture dati e collezioni in stile JDK — <strong>List, ArrayList, LinkedList, Map, Iterator</strong> e lambda — costruite da zero con interfacce e generics. Un progetto per padroneggiare OOP, astrazione e generics.</p>
+            <div class="d-flex flex-wrap gap-2 my-3">
+              <span class="badge rounded-pill text-bg-light border">Java</span>
+              <span class="badge rounded-pill text-bg-light border">OOP</span>
+              <span class="badge rounded-pill text-bg-light border">Generics</span>
+              <span class="badge rounded-pill text-bg-light border">Strutture dati</span>
+            </div>
+            <a href="https://github.com/AndreaDev05/tinyjdk-oop2" target="_blank" rel="noopener" class="card-link"><i class="bi bi-github"></i> Codice</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-5 bg-light border-top border-bottom">
+  <div class="container">
+    <h2 class="section-title">Formazione &amp; Certificazioni</h2>
+    <p class="section-sub">Il mio percorso</p>
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="timeline-item">
+          <div class="text-body-secondary small">2024 — oggi</div>
+          <h6 class="fw-bold mb-0">Laurea Triennale in Informatica</h6>
+          <div class="text-primary">Università Ca' Foscari di Venezia</div>
+        </div>
+        <div class="timeline-item">
+          <div class="text-body-secondary small">Set 2026 — Feb 2027</div>
+          <h6 class="fw-bold mb-0">Exchange Student</h6>
+          <div class="text-primary">Xi'an Jiaotong-Liverpool University (XJTLU) — Suzhou, Cina</div>
+          <p class="mb-0 small">Semestre internazionale: AI Application Design, Machine Learning, Big Data Analytics, Wireless Sensor Networks-based IoT.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="text-body-secondary small">2019 — 2024</div>
+          <h6 class="fw-bold mb-0">Perito in Informatica e Telecomunicazioni</h6>
+          <div class="text-primary">ITIS "E. Fermi" — Bassano del Grappa</div>
+        </div>
+        <div class="timeline-item">
+          <div class="text-body-secondary small">Cisco Networking Academy</div>
+          <h6 class="fw-bold mb-0">CCNA · Introduction to Cybersecurity</h6>
+          <div class="text-primary">Certificazioni su reti e fondamenti di sicurezza informatica</div>
+        </div>
+        <div class="timeline-item">
+          <div class="text-body-secondary small">Luglio 2024</div>
+          <h6 class="fw-bold mb-0">Scuola Estiva di Algoritmi Avanzati</h6>
+          <div class="text-primary">Università Ca' Foscari di Venezia</div>
+        </div>
+        <div class="timeline-item">
+          <div class="text-body-secondary small">2023</div>
+          <h6 class="fw-bold mb-0">Stage — Sistemi Informativi</h6>
+          <div class="text-primary">Vimar S.p.A. — Marostica</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+  <div class="container text-center">
+    <h2 class="section-title">Contatti</h2>
+    <p class="section-sub mx-auto" style="max-width:520px;">Mi trovi qui:</p>
+    <div class="d-flex flex-wrap gap-2 justify-content-center">
+      <a class="btn btn-primary" href="mailto:andrea.matteazzi@icloud.com"><i class="bi bi-envelope me-1"></i> andrea.matteazzi@icloud.com</a>
+      <a class="btn btn-outline-dark" href="https://github.com/AndreaDev05" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> github.com/AndreaDev05</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-4 bg-dark text-light">
+  <div class="container text-center small">
+    © 2026 Andrea Matteazzi ·
+    <a href="mailto:andrea.matteazzi@icloud.com" class="link-light">andrea.matteazzi@icloud.com</a> ·
+    <a href="https://github.com/AndreaDev05" target="_blank" rel="noopener" class="link-light">GitHub</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
